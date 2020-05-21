@@ -1,0 +1,88 @@
+$ancho : 1024px;
+$alto:400px
+$alto-numerico 400;
+$colo_letra: black;
+@import "menu";
+
+
+.contenedor {
+    width: $ancho;
+    padding: 10px;
+}
+h1,h2,h3,h4,h5,h6,p, #mi articulo {
+    color: $colo_letra;
+}
+.contenedor-con-altura {
+    @extend.contenedor;
+    height: $altura;
+    background-color: blue;
+}
+main {
+    color: $colo_letra;
+    padding:15px;
+    nav{
+        display: flex;
+        color:red;
+        font-size: 0.3rem;
+        a {
+            background-color: green;
+            display: inline-block;
+        }
+        a{
+            color: $colo_letra;
+            text-decoration: none;
+            &:hover{
+                color : red;
+                text-decoration: underline;
+            }
+            &:focus{
+                color:blue;
+            }
+        }
+
+    }
+}
+
+.mitad {
+width: (ancho/2px);
+}
+.cuarto {
+width:256px;
+}
+
+.octavo {
+width: ($ancho/8);
+}
+
+@function dividir($tam, $n_partes) {
+    $resultado : ($stam/ $n_partes);
+    @return $resulta;
+}
+
+.decimo {
+    width: divir (ancho, 10);
+
+}
+
+.contenedor-condicionado {
+@if $alto-numerico > 300 {
+    color: red;
+    p {
+        color: black;
+    }
+
+}@else {
+    color:blue;
+    
+   a{
+       padding: 200px;
+   }
+}
+}
+
+@for $parte from s1r to 50{
+.col-#{$parte} {
+    width: $ancho-numerico/$parte + "%";
+
+}
+}

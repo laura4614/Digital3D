@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 1.3em;
+  }
+  
+  header {
+    text-align: center;
+  }
+  
+  /*  hr raya*/
+  .hr-raya {
+    height: 3px;
+    border-radius: 50%;
+    transform: rotate(1deg);
+  }
+  
+  /* >> INICIO ESTILOS NAVEGACION<< */
+  nav {
+    padding: 1em 2em;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+    background-color: gray;
+    padding: 0 2em;
+    margin: 0 0.5em;
+    border-radius: 5px;
+  }
+  
+  nav a:active {
+    background-color: #ec8e01;
+  }
+  
+  /* >> FIN ESTILOS NAVEGACION<< */
+  
+  /* >> INICIO ESTILOS QUIEN SOY<< */
+  #quien-soy {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  #quien-soy .foto {
+    padding: 2em 1.4em;
+  }
+  
+  #quien-soy .description {
+    padding: 0 3em;
+  }
+  
+  #quien-soy .description h1 {
+    margin-top: 5px;
+  }
+  
+  #quien-soy .description hr {
+    background-color: black;
+    width: 225px;
+  }
+  
+  #quien-soy .description p {
+    text-align: justify;
+    margin-top: 0.5em;
+  }
+  
+  /* >>FIN ESTILOS QUIEN SOY<< */
+  
+  /* >>INICIO ESTILOS ¿A QUÉ ME DECICO?<<*/
+  #a-que-me-dedico {
+    background-color: #6fa8dc;
+    color: white;
+    text-align: center;
+    padding: 1em 5em;
+  }
+  
+  #a-que-me-dedico h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  #a-que-me-dedico hr {
+    background-color: white;
+    width: 240px;
+    margin: 0 auto;
+  }
+  
+  #a-que-me-dedico p {
+    margin: 1em;
+  }
+  
+  /* >>FIN ESTILOS ¿A QUÉ ME DECICO?<< */
+  
+  /* >> INICIO ESTILOS ¿CÓMO PUEDO AYUDARTE << */
+  
+  #como-puedo-ayudarte h1 {
+    font-size: 2em;
+    margin: 1em 0;
+    text-align: center;
+  }
+  
+  #como-puedo-ayudarte .cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+  
+  #como-puedo-ayudarte .cards-container .card {
+    display: table;
+    width: 350px;
+    padding: 1em 1em 3em 1em;
+    color: white;
+    background-color: #ff9900;
+    border: 3px solid #2c78e3;
+    border-radius: 3px;
+  }
+  
+  #como-puedo-ayudarte .cards-container .card h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+  
+  #como-puedo-ayudarte .cards-container .card p {
+    text-align: justify;
+  }
+  
+  #como-puedo-ayudarte .cards-container .card button {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    bottom: -2em;
+    border: none;
+    padding: 1px 2em;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff9900;
+    text-transform: uppercase;
+    border: 3px solid black;
+    background-color: white;
+    box-shadow: 3px 3px black;
+    cursor: pointer;
+  }
+  
+  /* >> FIN ESTILLOS ¿CÓMO PUEDO AYUDARTE << */
+  
+  /* >> INICIO ESTILOS HERRAMIENTAS DE DOMINIO << */
+  #herramientas {
+    background-color: #6fa8dc;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #herramientas h2 {
+    color: white;
+    margin-bottom: 1em;
+  }
+  
+  #herramientas ul {
+    margin: 0 auto;
+    margin-bottom: 3em;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #herramientas ul li {
+    display: block;
+    padding: 20px;
+    width: 20%;
+    background-color: rgb(240, 239, 239);
+  }
+  
+  #herramientas ul li .nombre {
+    position: relative;
+    top: -20px;
+    left: -20px;
+    background-color: gray;
+  }
+  
+  #herramientas .logo {
+    width: 100px;
+  }
+  
+  /* >> FIN ESTILOS HERRAMIENTAS DE DOMINIO << */
+  /* >> INICIO FOOTER << */
+  footer {
+    text-align: center;
+    padding: 1em;
+  }
+  
+  /* >> FIN FOOTER << */
+  /* >> << */
+  
+  /* Estilos varios */
+  .borde {
+    border: 1px solid black;
+  }
+  
+  .upper {
+    text-transform: uppercase;
+  }

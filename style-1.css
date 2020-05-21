@@ -1,0 +1,41 @@
+body {
+    padding: 20px;
+    background-color: white;
+}
+#page{
+    display:grid;
+    height: 400px;
+    grid-template-areas: "header header"
+                         "nav cuerpo"
+                         "nav pie";
+  column-gap:20px;
+  row-gap: 10px;
+    grid-template-rows: 200px 1fr 100px; 
+    grid-template-columns: 200px 1fr;    
+}
+header {
+    background-color:wheat ;
+    grid-area: header;
+}
+nav {
+    background-color: yellowgreen;
+    grid-area: nav;
+}
+main {
+background-color: blue;
+}
+footer {
+background-color: pink;
+grid-area: pie;
+}
+
+@media only screen and (max-width:700px) {
+    #page
+         { grid-template-areas: "header header"
+        "nav cuerpo"
+        "nav pie";
+    }
+}
+@media only screen and (max-width:700px) {
+    
+}
